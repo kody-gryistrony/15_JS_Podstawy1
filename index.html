@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+	//deklaracja i inicjalizacja
+	var numer = 5;
+
+	console.log(5); 
+
+	console.log(numer); 
+	//przypisanie
+	numer = 7;
+
+	console.log(numer);
+
+	var konsola = console.log('hello');
+
+	var dodawanie = function(){
+		return 5 + 7;
+	};	
+
+	//wywołanie funkcji
+	dodawanie();
+
+	//pokazuje co jest dopisane do zmiennej
+	console.log(dodawanie);
+
+	//wywoluje funkcje w konsoli
+	console.log(dodawanie());
+
+	//do zmiennej dodaje wywołanie funkcji
+	//var wynik = dodawanie();
+
+	//wyświetlam zmienną wynik
+	console.log(wynik);
+
+	var mnozenie = function(a, b){
+		return a*b;
+	};
+
+
+	console.log(mnozenie(2,4));
+
+	console.log(mnozenie(124,92));
+
+	var dzielenie = function(a,b){
+		return a/b;
+		var numer2 = 8;
+	};
+
+	console.log(dzielenie(12,4));
+
+	// operacje matematyczne:
+	// + dodawanie
+	// - odejmowanie
+	// * mnożenie
+	// / dzielenie
+
+	//kolejność działań jak normalnie w matematyce
+	console.log(((2+3)+2)*4);
+
+	var numer1 = 5;
+
+	var odejmowanie = function(){
+		var numer2 = 2;
+		return numer1 - numer2;
+	};
+
+	//nie można wywołać zmiennej numer2
+	//zmienna żyje w obrębie klamerek w których jest zadeklarowana
+	//console.log(numer2);
+
+	console.log('odejmowanie ' + odejmowanie() );
+
+	//najcześciej tak deklaruje się funkcje w javascripcie:
+	function mat(a,b,c){
+		return a+b-c;
+	};
+
+	console.log(mat(1,2,3));
+
+	//zmienna typu tekstowego = String;
+	var imie = "Magda"; 
+	console.log(imie);
+
+	var ulamek = 2.1;
+
+	//zmienna typu logicznego true/false
+	var boolean = false;
+	var booleanString = 'false';
+
+	console.log(boolean);
+	console.log(booleanString);
+
+	console.log('//////////////instrukcje warunkowe');
+	//instrukcja typu warunkowego
+	if(true){
+		console.log('true');
+	} else{
+		console.log('nie true');
+	}
+
+	//
+	// if(){
+
+	// }else if(){
+
+	// }else{
+
+	// }
+
+
+	function dzialanie(a,b){
+		return a + b;
+	};
+	
+	var wynik = dzialanie(5,5);
+
+	// var wynik = '10';
+	if(wynik < 10){
+		console.log('Wynik jest mniejszy od 10');
+	} else if( wynik == 10){
+		console.log('Wynik jest równy 10');
+	} else if(wynik >10){
+		console.log('Wynik jest większy od 10');
+	};
+
+	//typy porównań:
+	// < mniejsze
+	// > większe
+	// >= większe równe
+	// <=mniejsze równe
+	// == równe (wartość)
+	// === równe (wartość i typ)
+
+
+	var wiek = 10;
+	var dokument = true;
+
+	// operatory logiczne:
+	// || lub
+	// && oraz
+	// () grupowanie instrukcji
+
+	if( (wiek < 18 || wiek > 65) && dokument){
+		console.log('Uprawniony do znizek');
+	}else{
+		console.log('Nie jest uprawniony do zniżek');
+	};
+
+
+
+	// (instrukcja) ? (wynik jeżeli prawda) : (wynik jeżeli fałsz);
+	var cos = true ? console.log('tak') : console.log('nie');
+
+	cos = (2 < 10) ? console.log('jest prawda') : console.log('nie jest prawda');
+
+	
+
+</script>
+</body>
+</html>
